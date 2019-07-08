@@ -1,0 +1,4 @@
+#Equilateral Triangle
+#User picked point: if it's not in range, ask input again with user exception
+#Random midpoint between random nodes
+#Trace the image using line segments
