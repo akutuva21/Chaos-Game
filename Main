@@ -1,4 +1,9 @@
-#Equilateral Triangle
 #User picked point: if it's not in range, ask input again with user exception
 #Random midpoint between random nodes
 #Trace the image using line segments
+'''General idea: these 3 points on the xy plane make an equilateral triange:P=(0,0), Q=(0,1),R=(1,0). Begin at P.
+Set point p to 1, point Q to 2, R to 3. Let user pick 2 or 3. If 2, make a point halfway between P and Q. If 3, make 
+a point halfway between p and r. Repeat.'''
+'''The chaos game is meant to emulate a fractal, called the Sierpinski triangle. It can be applied to different shapes 
+other than an equilateral triangle. This game represents the butterfly effect, as well as how chaos or randomness can 
+eventually form order.'''
