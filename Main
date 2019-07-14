@@ -8,3 +8,4 @@ a point halfway between p and r. Repeat.'''
 '''The chaos game is meant to emulate a fractal, called the Sierpinski triangle. It can be applied to different shapes 
 other than an equilateral triangle. This game represents the butterfly effect, as well as how chaos or randomness can 
 eventually form order.'''
+# referencing https://www.101computing.net/python-fractals/
