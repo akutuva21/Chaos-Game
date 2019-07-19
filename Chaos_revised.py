@@ -1,13 +1,25 @@
 import matplotlib.pyplot as plt
 import math,random
 
+def checkcolor(color):
+    color = color.lower()
+    if color == 'blue' or color == 'green' or color == 'red' or color == 'magenta' or color == 'yellow' or color == 'white':
+        return list(color)[0]
+    elif color == 'black':
+        return 'k'
+    else:
+        color = input("Enter another color: ")
+        checkcolor(color)
+
 def main():
     i, ptlist, xvals, yvals = 0, [], [], []
     numiter = int(input("Enter the number of iterations: "))
     numsides = int(input("Enter the number of sides (Not Too Many - Creates a Circle): "))
-    
+
+    color = checkcolor(input("Enter a color: "))
+
     while True:
-        if numsides > 3 and type(numsides) == int:
+        if numsides >= 3 and type(numsides) == int:
             break
         numsides = input("Sorry, wrong input. Try again: ")
 
@@ -43,7 +55,7 @@ def main():
         yvals.append(x[1])
         i += 1
 
-    plt.scatter(xvals, yvals, s = 0.5, c = "r", marker = "o")
+    plt.scatter(xvals, yvals, s = 0.5, c = color, marker = "o")
     plt.title("Chaos Game")
     plt.axis('off')
     #plt.tight_layout()
