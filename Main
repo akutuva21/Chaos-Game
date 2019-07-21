@@ -1,9 +1,10 @@
-#User picked point: if it's not in range, ask input again with user exception
-#Random midpoint between random nodes
-#Trace the image using line segments
-'''General idea: these 3 points on the xy plane make an equilateral triange:P=(0,sqrt(3)/4), Q=(-1/2,-sqrt(3)/4),R=(1/2,-sqrt(3)/4). Begin at P.
-Set point p to 1, point Q to 2, R to 3. Let user pick 2 or 3. If 2, make a point halfway between P and Q. If 3, make 
-a point halfway between p and r. Repeat.'''
+#User picked polygon: if it's not in range (3 sides or more), ask input again with user exception
+#Plotting the fractal: First, the number of points plotted is input. 
+Using a random starting vertex, there is a midpoint plotted between the given point and another random vertex of the polygon. 
+This midpoint is used as a point of reference to create another midpoint between it and another random vertex.
+Aften the given number of iterations, a fractal should be generated.
+It is seen that polygons with an odd number of sides have more visually appealing fractals that appear better with more iterations.
+Polygons with an even number of sides require much less iterations to see their fractals, which are fainter and harder to spot.
 #See https://math.stackexchange.com/questions/2385147/how-do-i-represent-an-equilateral-triangle-in-cartesian-coordinates-centered-aro
 '''The chaos game is meant to emulate a fractal, called the Sierpinski triangle. It can be applied to different shapes 
 other than an equilateral triangle. This game represents the butterfly effect, as well as how chaos or randomness can 
