@@ -21,28 +21,28 @@ class AppForm(QtWidgets.QMainWindow):
             elif color == 'black':
                 return 'k'
             else:
-                checkcolor(input("Enter another color: "))
+                checkcolor(input("Enter Another Color: "))
 
         i, ptlist, xvals, yvals = 0, [], [], []
-        numiter = int(input("Enter the number of iterations: "))
-        numsides = int(input("Enter the number of sides (Not Too Many - Creates a Circle): "))
+        numiter = int(input("Enter The Number of Iterations: "))
+        numsides = int(input("Enter The Number Of Sides (Not Too Many - Creates a Circle): "))
         while True:
             if numsides >= 3:
                 break
-            numsides = int(input("Try again: "))
-        color = checkcolor(input("Enter a color: "))
+            numsides = int(input("Try Again: "))
+        color = checkcolor(input("Enter A Color: "))
 
         while True:
             if numsides >= 3 and type(numsides) == int:
                 break
-            numsides = input("Sorry, wrong input. Try again: ")
+            numsides = input("Sorry, Wrong Input. Try again: ")
 
-        rotation = int(input("Enter the degrees of rotation: "))
+        rotation = int(input("Enter The Degrees of Rotation: "))
         while True:
             rotation %= 360
             if 0 <= rotation <= 360:
                 break
-            rotation = int(input("Sorry, invalid output. Try again: "))
+            rotation = int(input("Sorry, Invalid Output. Try Again: "))
         rotation *= math.pi / 180  # https://en.wikipedia.org/wiki/Rotation_of_axes
 
         def pointfinder(N, n):
