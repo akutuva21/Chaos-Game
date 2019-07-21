@@ -6,7 +6,7 @@ from PyQt5.QtGui import QPainter, QBrush, QPen
 from PyQt5.QtCore import Qt,QPoint
 import sys,random,numpy,math
 
-# remaber color,x,y
+# remember color,x,y
 class  DrawPoint():
     def __init__(self):
         self.x = 0
