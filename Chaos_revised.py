@@ -8,22 +8,22 @@ def checkcolor(color):
     elif color == 'black':
         return 'k'
     else:
-        color = input("Enter another color: ")
+        color = input("Sorry, please enter another color: ")
         checkcolor(color)
 
 def main():
     i, ptlist, xvals, yvals = 0, [], [], []
     numiter = int(input("Enter the number of iterations: "))
-    numsides = int(input("Enter the number of sides (Not Too Many - Creates a Circle): "))
+    numsides = int(input("Enter the number of sides: "))
 
     color = checkcolor(input("Enter a color: "))
 
     while True:
         if numsides >= 3 and type(numsides) == int:
             break
-        numsides = input("Sorry, wrong input. Try again: ")
+        numsides = input("Sorry, invalid input. Try again: ")
 
-    rotation = int(input("Enter the degrees of rotation: "))
+    rotation = int(input("Enter the degrees of rotation (counter-clockwise): "))
     while True:
         if 0 <= rotation <= 360:
             break
@@ -33,7 +33,8 @@ def main():
     def pointfinder(N,n):
         x = math.cos(2*math.pi*n/N)
         y = math.sin(2*math.pi*n/N)
-        return (x*math.cos(rotation) + y*math.sin(rotation), -x*math.sin(rotation) + y*math.cos(rotation))
+        return (-x*math.sin(rotation) + y*math.cos(rotation), x*math.cos(rotation) + y*math.sin(rotation))
+        #return (x*math.cos(rotation) + y*math.sin(rotation), -x*math.sin(rotation) + y*math.cos(rotation))
     
     def midpoint(self, x1, y1, x2, y2):
         return ((x1 + x2) / 2.0, (y1 + y2) / 2.0)
@@ -63,3 +64,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
