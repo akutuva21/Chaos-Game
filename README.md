@@ -11,6 +11,6 @@ This program uses Python 3 in the latest version. Currently, the .bat file fails
 #Achyudhan - Developed the GUI and much of the hard code based on the pseudo-code implentation and the plot_test_5.py file on the MyLearning site
 
 
-#Sally: Developed a GUI to beta-test a simplified version of the full code to test triangles, rectangles, and pentagons
+#Sally: Developed a GUI (named GUIattempt) to beta-test a simplified version of the full code to test triangles, rectangles, and pentagons
 
 # Link to Presentation: https://tinyurl.com/y5eg2lkb
