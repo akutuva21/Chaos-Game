@@ -13,3 +13,4 @@ This program uses Python 3 in the latest version. Currently, the .bat file fails
 
 #Sally: Developed a GUI to beta-test a simplified version of the full code to test triangles, rectangles, and pentagons
 
+# link to presentation: https://docs.google.com/presentation/d/1-jEAyiXMXgObaO_QJMpQL-XHTKgm_C3yUsyalG50iRw/edit?usp=sharing
