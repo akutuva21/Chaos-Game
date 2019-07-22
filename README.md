@@ -5,7 +5,7 @@ GUI libraries for Python along with PyQt will be used to create the visual inter
 This program uses Python 3 in the latest version. Currently, the .bat file fails to run the program.
 
 # ROLES:
-#Anish - Simplified/generalized the code to apply to an n-gon figure for all integer n
+#Anish - Simplified/generalized the code to apply to an n-gon figure for all integer n > 3
 
 
 #Achyudhan - Developed the GUI and much of the hard code based on the pseudo-code implentation and the plot_test_5.py file on the MyLearning site
