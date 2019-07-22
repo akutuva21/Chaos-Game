@@ -4,7 +4,12 @@ The fractals are created by starting on one point of a polygon and plotting the 
 GUI libraries for Python along with PyQt will be used to create the visual interface for the user.
 This program uses Python 3 in the latest version. Currently, the .bat file fails to run the program.
 
-ROLES: \n
-Anish - Simplified/generalized the code to apply to an n-gon figure for all integer n \n
-Achyudhan - Developed the GUI and much of the hard code based on the pseudo-code implentation and the plot_test_5.py file on the MyLearning site \n
-Sally: Developed a GUI to beta-test a simplified version of the full code to test triangles, rectangles, and pentagons
+# ROLES:
+#Anish - Simplified/generalized the code to apply to an n-gon figure for all integer n
+
+
+#Achyudhan - Developed the GUI and much of the hard code based on the pseudo-code implentation and the plot_test_5.py file on the MyLearning site
+
+
+#Sally: Developed a GUI to beta-test a simplified version of the full code to test triangles, rectangles, and pentagons
+
